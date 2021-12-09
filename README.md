@@ -1,5 +1,9 @@
 # spring-web-flux-exercice
 
+This project is an exercice where the the aim is to implement the following point:
+- **an endpoint to get all the products => GET /products**
+- **an endpoint to save a product => POST /products**
+
 This project use the following librairy:
 - spring boot 2.6.1
 - lombok 1.18.20
@@ -7,18 +11,34 @@ This project use the following librairy:
 - spring boot webflux
 - mapstruct 1.4.2.Final
 
-The used database is H2, you do not need to create a database and insert data. When application will start, everything will be created
+About the database, it uses the H2, you do not need to create a database and insert data. When application will start, everything will be created
 
-Requirement:
+**Requirement to be able to do this exercice:**
 - Maven
 - Git
 - Developpment IDE
 - Java 11
 - Rest client (Postman...)
 
-The aim of this exercice is to implement the following point:
-- an endpoint to get all the products
-- an endpoint to save a product
 
-Good Luck!
+**Good Luck!**
 
+# Excepcted results
+
+- When I call http://localhost:8181/products with GET method, I get a JSON like:
+```sh
+[
+    {
+        "idCompany": "1",
+        "code": "P1",
+        "name": "Product1",
+        "price": 10.0,
+        "creationDate": "2021-12-09T15:22:07.751341",
+        "company": {
+            "code": "COMP1",
+            "name": "Company1",
+            "creationDate": "2021-12-09T15:22:07.742178"
+        }
+    }
+]
+```
