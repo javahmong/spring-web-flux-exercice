@@ -23,9 +23,10 @@ About the database, it uses the H2, you do not need to create a database and ins
 
 **Good Luck!**
 
+
 # Excepcted results
 
-- When I call http://localhost:8181/products with GET method, I get a JSON like:
+- When I call http://localhost:8181/products with GET method, I get a response 200 OK and a JSON like:
 ```sh
 [
     {
@@ -42,3 +43,32 @@ About the database, it uses the H2, you do not need to create a database and ins
     }
 ]
 ```
+- When I call http://localhost:8181/products with POST method with JSON like:
+```sh
+{
+    "code": "P4",
+    "name": "Product4",
+    "price": 10.0,
+    "creationDate": "2021-12-09T15:22:07.751341",
+    "company": {
+        "code": "COMP1"
+    }
+}
+```
+
+I get a response 200 OK and a JSON like:
+```sh
+{
+    "idCompany": "1",
+    "code": "P4",
+    "name": "Product4",
+    "price": 10.0,
+    "creationDate": "2021-12-09T15:22:07.751341",
+    "company": {
+        "code": "COMP1",
+        "name": "Company1",
+        "creationDate": "2021-12-09T16:24:44.547811"
+    }
+}
+```
+
