@@ -14,6 +14,7 @@ Requirement:
 - Git
 - Developpment IDE
 - Java 11
+- Rest client (Postman...)
 
 The aim of this exercice is to implement the following point:
 - an endpoint to get all the products
