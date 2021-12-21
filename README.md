@@ -14,6 +14,7 @@ This project use the following librairy:
 About the database, it uses the H2, you do not need to create a database and insert data. When application will start, everything will be created
 
 **Requirement to be able to do this exercice:**
+- clone the project and create a branch with your trigram. Exemple: Mr John Detail => JDE-spring-web-flux-exercice will be the branch name. Do not forget to push your branches
 - Maven
 - Git
 - Developpment IDE
